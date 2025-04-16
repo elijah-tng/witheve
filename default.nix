@@ -7,8 +7,8 @@ pkgs.stdenv.mkDerivation rec {
   src = pkgs.fetchFromGitHub {
     owner = "witheve";
     repo = "Eve";
-    rev = "f680d331d827c7dfe3eaeb79a2a7ce86710d930b"; # Replace with latest commit or tag
-    sha256 = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="; # Replace with actual hash
+    rev = "f680d331d827c7dfe3eaeb79a2a7ce86710d930b";
+    sha256 = "sha256-HOX3ojJ5VvHaf8eI9F4u9dDhV+yislEmy7ei0//U3hA=";
   };
 
   buildInputs = [ pkgs.nodejs pkgs.yarn ];
