@@ -1,6 +1,4 @@
-{ pkgs }:
-
-let
+{pkgs}: let
   eveSrc = pkgs.fetchFromGitHub {
     owner = "witheve";
     repo = "Eve";
@@ -16,16 +14,15 @@ let
     yarnNix = ./yarn.nix;
   };
 in
+  pkgs.stdenv.mkDerivation {
+    pname = "eve";
+    version = "0.3-alpha";
+    src = eveSrc;
+    buildInputs = [pkgs.nodejs pkgs.yarn];
+    nativeBuildInputs = [yarnModules];
 
-pkgs.stdenv.mkDerivation {
-  pname = "eve";
-  version = "0.3-alpha";
-  src = eveSrc;
-  buildInputs = [ pkgs.nodejs pkgs.yarn ];
-  nativeBuildInputs = [ yarnModules ];
-
-  installPhase = ''
-    mkdir -p $out
-    cp -r . $out/
-  '';
-}
+    installPhase = ''
+      mkdir -p $out
+      cp -r . $out/
+    '';
+  }
