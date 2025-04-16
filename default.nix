@@ -7,7 +7,7 @@ pkgs.stdenv.mkDerivation rec {
   src = pkgs.fetchFromGitHub {
     owner = "witheve";
     repo = "Eve";
-    rev = "f2b7f1c4d9c1c6c6e3c2b9e8e0b9e6b0e2c4c4c4"; # Replace with latest commit or tag
+    rev = "f680d331d827c7dfe3eaeb79a2a7ce86710d930b"; # Replace with latest commit or tag
     sha256 = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="; # Replace with actual hash
   };
 
