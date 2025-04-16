@@ -1,0 +1,53 @@
+{
+  "name": "witheve",
+  "version": "0.3.0-preview5",
+  "description": "Programming designed for humans",
+  "keywords": [
+    "language",
+    "ide",
+    "relational",
+    "database",
+    "dataflow"
+  ],
+  "homepage": "http://witheve.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/witheve/Eve"
+  },
+  "bugs": {
+    "url": "https://github.com/witheve/Eve/issues"
+  },
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=7.4.0"
+  },
+  "main": "build/src/index.js",
+  "types": "build/src/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "postinstall": "tsc",
+    "prepublish": "tsc",
+    "test": "node build/test/all.js | faucet",
+    "start": "echo 'Please download the eve-starter repository to begin using Eve <https://github.com/witheve/eve-starter>.'"
+  },
+  "dependencies": {
+    "@types/commonmark": "^0.22.29",
+    "@types/dateformat": "^1.0.1",
+    "@types/node": "^6.0.41",
+    "@types/tape": "^4.2.28",
+    "@types/uuid": "^2.0.29",
+    "chevrotain": "0.28.2",
+    "commonmark": "^0.27.0",
+    "dateformat": "^2.0.0",
+    "express": "^4.14.0",
+    "falafel": "^2.0.0",
+    "javascript-natural-sort": "^0.7.1",
+    "setimmediate": "^1.0.5",
+    "typescript": "^2.1.4",
+    "uuid": "^3.0.1"
+  },
+  "devDependencies": {
+    "faucet": "0.0.1",
+    "tape": "^4.6.0"
+  }
+}
