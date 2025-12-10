@@ -1,4 +1,4 @@
-FROM node:6-slim
+FROM docker.io/library/node:6-slim
 MAINTAINER Kodowa, Inc. <info@kodowa.com>
 ADD / /eve
 RUN chown -R node:node /eve
