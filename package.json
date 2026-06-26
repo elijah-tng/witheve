@@ -44,10 +44,10 @@
     "javascript-natural-sort": "^0.7.1",
     "setimmediate": "^1.0.5",
     "typescript": "^2.1.4",
-    "uuid": "^3.0.1"
+    "uuid": "^14.0.1"
   },
   "devDependencies": {
-    "faucet": "0.0.1",
+    "faucet": "^0.0.4",
     "tape": "^4.6.0"
   }
 }
